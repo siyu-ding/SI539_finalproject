@@ -48,12 +48,12 @@ h4 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: small;
-    color: #a0a0a0;
+    color: #4c4b4b;
     padding-bottom: 5%;
 }
 
 .dark-color {
-    color: rgba(139, 139, 139, 1);
+    color: rgb(54, 53, 53);
     font-weight: bold;
 }
 
@@ -116,7 +116,7 @@ h4 {
 
 .rk-mobile-menu:checked+label,
 .rk-mobile-menu+label:hover {
-    color: #a0a0a0;
+    color: #d19a0f;
 }
 
 .rk-mobile-menu:checked+label svg {
@@ -161,7 +161,7 @@ h4 {
 }
 
 .rk-menu__item.active {
-    color: #a0a0a0;
+    color: #d19a0f;
 }
 
 
