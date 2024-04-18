@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Airer Chair</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/chair.css">
+</head>
+
+<body class="top-fixed">
+    <a href="#maincontent" class="skip-link">Skip to Main Content</a>
+    <header class="header-container">
+        <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+        <label for="mobile-menu">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg
+                class="icon" width="200px" height="200.00px" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M892.928 128q28.672 0 48.64 19.968t19.968 48.64l0 52.224q0 28.672-19.968 48.64t-48.64 19.968l-759.808 0q-28.672 0-48.64-19.968t-19.968-48.64l0-52.224q0-28.672 19.968-48.64t48.64-19.968l759.808 0zM892.928 448.512q28.672 0 48.64 19.968t19.968 48.64l0 52.224q0 28.672-19.968 48.64t-48.64 19.968l-759.808 0q-28.672 0-48.64-19.968t-19.968-48.64l0-52.224q0-28.672 19.968-48.64t48.64-19.968l759.808 0zM892.928 769.024q28.672 0 48.64 19.968t19.968 48.64l0 52.224q0 28.672-19.968 48.64t-48.64 19.968l-759.808 0q-28.672 0-48.64-19.968t-19.968-48.64l0-52.224q0-28.672 19.968-48.64t48.64-19.968l759.808 0z"
+                    fill="#241302" />
+            </svg>
+        </label>
+        <div class="ae-container-fluid rk-topbar">
+            <div class="rk-logo">
+                <h1 class="rk-logo"><a href="index.html"><img src="img/logo.png" alt="siyu's Portfolio"></a></h1>
+            </div>
+            <nav class="rk-navigation">
+                <ul class="rk-menu">
+                    <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="portfolio.html" class="rk-menu__link">About</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Other Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="maincontent">
+
+        <div class="text_container">
+            <h1>Airer Chair</h1>
+            <p id="chair_p">A multi-function chair and prototype it. We were required to iterate our design and make
+                the
+                chair
+                can bear users' weight and be comfortable to sit</p>
+        </div>
+        <div class="chairgrid">
+            <div class="content_container">
+                <h2>Pitch Video</h2>
+                <p id="chair_p2">You can click the button below the video to jump to the
+                    content
+                    you want to watch directly.</p>
+            </div>
+            <div id="video-container">
+                <video id="myVideo" controls>
+                    <source src="img/chairvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+            <div class="chairbutton_container">
+
+                <button onclick="seekTo(0)">Overview</button>
+                <button onclick="seekTo(16)">Main Function</button>
+                <button onclick="seekTo(32)">Example Usage</button>
+                <button onclick="seekTo(42)">User Feedback</button>
+            </div>
+        </div>
+
+        <script>
+
+            var video = document.getElementById("myVideo");
+            var buttons = document.querySelectorAll("button");
+
+            // Listen for the video's play event
+            video.addEventListener("play", function () {
+                // Enable buttons when video starts playing
+                buttons.forEach(function (button) {
+                    button.disabled = false;
+                });
+            });
+
+            // jump to desire time and play
+            function seekTo(time) {
+                video.currentTime = time;
+                video.play(); // Start playing after seeking
+            }
+        </script>
+
+    </main>
+
+    <footer class="rk-footer">
+        <p class="footer_text "> Email: <a href="mailto:siyuding@umich.edu" class="dark-color ">siyuding@umich.edu
+            </a>
+        </p>
+        <p class="footer_text ">Design by Siyu Ding</p>
+    </footer>
+</body>
+
+</html>
