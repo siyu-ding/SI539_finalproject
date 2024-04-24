@@ -12,7 +12,7 @@ button {
 
 a:hover,
 button:hover {
-    color: #a0a0a0
+    color: #d19a0f
 }
 
 a:not(.au-underline),
@@ -117,6 +117,9 @@ h4 {
 .rk-mobile-menu:checked+label,
 .rk-mobile-menu+label:hover {
     color: #d19a0f;
+    text-transform: uppercase;
+    text-decoration: none;
+
 }
 
 .rk-mobile-menu:checked+label svg {
@@ -150,6 +153,7 @@ h4 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-size: 18px;
+    text-decoration: underline;
 }
 
 .rk-menu__item:first-child {
@@ -162,6 +166,8 @@ h4 {
 
 .rk-menu__item.active {
     color: #d19a0f;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
