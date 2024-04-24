@@ -12,7 +12,7 @@ button {
 
 a:hover,
 button:hover {
-    color: #d19a0f
+    color: #9d7102;
 }
 
 a:not(.au-underline),
@@ -116,7 +116,7 @@ h4 {
 
 .rk-mobile-menu:checked+label,
 .rk-mobile-menu+label:hover {
-    color: #d19a0f;
+    color: #9d7102;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -148,7 +148,7 @@ h4 {
 
 
 .rk-menu__item {
-    color: #202020;
+    color: #4c4b4b;
     display: inherit;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -165,7 +165,7 @@ h4 {
 }
 
 .rk-menu__item.active {
-    color: #d19a0f;
+    color: #9d7102;
     text-transform: uppercase;
     text-decoration: none;
 }
